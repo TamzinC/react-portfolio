@@ -1,11 +1,29 @@
 
 
 function Header(props) {
-  
+
+    const styles = {
+        navBar: {
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '9px 3%'
+        },
+        links: {
+            textDecoration: 'none'
+        }
+    }
+
     return (
-      <header>
-        
-      </header>
+        <nav style={styles.navBar}>
+            <ul>
+                <a href='#'>Home</a>
+                <a href='#'>About Me</a>
+                <a href='#'>Projects</a>
+                <a href='#'>Contact</a>
+            </ul>
+            <h3 href='#'>Tamzin Chikhalia</h3>
+        </nav>
     )
   }
   

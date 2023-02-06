@@ -1,0 +1,38 @@
+projects: [
+    {
+        title: "Weather App",
+        deployedURL: "https://tamzinc.github.io/weather-app/",
+        repo: "https://github.com/TamzinC/weather-app",
+        image: "./public/images/weather-app.png"
+    },
+    {
+        title: "Code Quiz",
+        deployedURL: "https://tamzinc.github.io/code-quiz/index.html",
+        repo: "https://github.com/TamzinC/code-quiz",
+        image: "./public/images/code-quiz.png"
+    },
+    {
+        title: "Find My Artist",
+        deployedURL: "https://stansaner.github.io/song-search-app/",
+        repo: "https://github.com/TamzinC/find-my-artist",
+        image: "./public/images/weather-app.png"
+    },
+    {
+        title: "Password Generator",
+        deployedURL: "https://tamzinc.github.io/password-generator/",
+        repo: "https://github.com/TamzinC/password-generator",
+        image: "./public/images/password-generator.png"
+    },
+    {
+        title: "Work Day Scheduler",
+        deployedURL: "https://tamzinc.github.io/work-day-scheduler/",
+        repo: "https://github.com/TamzinC/work-day-scheduler",
+        image: "./public/images/work-day-scheduler.png"
+    },
+    {
+        title: "Team Profile Generator",
+        deployedURL: 
+        repo: "https://github.com/TamzinC/team-profile-generator",
+        image: "./public/images/team-profile-generator.png"
+    }
+]
