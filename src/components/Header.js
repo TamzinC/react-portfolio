@@ -1,4 +1,4 @@
-
+import {NavLink} from 'react-router-dom';
 
 function Header(props) {
 
@@ -15,15 +15,15 @@ function Header(props) {
     }
 
     return (
-        <nav style={styles.navBar}>
-            <ul>
-                <a href='#'>Home</a>
-                <a href='#'>About Me</a>
-                <a href='#'>Projects</a>
-                <a href='#'>Contact</a>
-            </ul>
-            <h3 href='#'>{props.title}</h3>
-        </nav>
+        <header style={styles.navBar}>
+            <h3>{props.title}</h3>
+            <nav style={styles.links}>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/about-me'>About Me</NavLink>
+                <NavLink to='/projects'>Projects</NavLink>
+                <NavLink to='/contact'>Contact</NavLink>
+            </nav>
+        </header>
     )
   }
   
