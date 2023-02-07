@@ -1,4 +1,4 @@
-projects: [
+challenges: [
     {
         title: "Weather App",
         deployedURL: "https://tamzinc.github.io/weather-app/",

@@ -1,33 +1,39 @@
 // import {useState} from 'react';
+import {Routes, Route} from 'react-router-dom';
+import './index.css';
+// import './data.json';
 
 import Header from './components/Header';
-import Home from './components/Home';
-import Gallery from './components/Gallery';
-import Project from './components/Project';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import Gallery from './pages/Gallery';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 
-import './index.css';
 
 
 
 function App() {
-  // const title = "Tamzin's Portfolio"
+  const title = "Tamzin Chikhalia"
 
   return (
     <>
 
-      <Header />
+      <Header title={title} />
 
-      <Home />
 
-      <Gallery />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/Project' element={<Project />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+      
 
-      <Project />
+      <Footer title={title} />
 
-      <Contact />
-
-      <Footer />
 
     </>
   );

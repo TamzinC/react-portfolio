@@ -22,7 +22,7 @@ function Header(props) {
                 <a href='#'>Projects</a>
                 <a href='#'>Contact</a>
             </ul>
-            <h3 href='#'>Tamzin Chikhalia</h3>
+            <h3 href='#'>{props.title}</h3>
         </nav>
     )
   }
