@@ -19,8 +19,8 @@ function Header(props) {
             <h3>{props.title}</h3>
             <nav style={styles.links}>
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/about-me'>About Me</NavLink>
-                <NavLink to='/projects'>Projects</NavLink>
+                <NavLink to='/gallery'>About Me</NavLink>
+                <NavLink to='/project'>Projects</NavLink>
                 <NavLink to='/contact'>Contact</NavLink>
             </nav>
         </header>

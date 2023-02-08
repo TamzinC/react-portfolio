@@ -1,7 +1,7 @@
 // import {useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
+import data from './data.json';
 import './index.css';
-// import './data.json';
 
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -27,7 +27,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/Project' element={<Project />} />
+        <Route path='/Project' element={<Project challenges={data}/>} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       

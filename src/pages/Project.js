@@ -5,9 +5,9 @@ function Project(props) {
     return (
       <main>
         <ul>
-          {/* {challenges.map((challenge, index) => (
-            <li key={index}>{challenge}</li>
-          ))} */}
+          {props.challenges.map((challenge, index) => (
+            <li key={index}>{challenge.title}</li>
+          ))}
         </ul>
       </main>
     )
