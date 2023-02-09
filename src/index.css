@@ -13,6 +13,30 @@ body {
   font-family: sans-serif;
 }
 
+/* CUSTOM */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  /* background-color: #07b6ae;
+  color: #fff; */
+}
+
+nav a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+
+nav a:not(:last-child) {
+  margin-right: 10px;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
 form {
   width: 380px;
   display: flex;

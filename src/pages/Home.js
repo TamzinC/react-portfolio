@@ -3,7 +3,6 @@ import profilePic from '../images/profile-pic.PNG';
 function Home(props) {
   
     return (
-        <header>
         <div>
             <div>
                 <h1>Hey, I'm Tamzin!</h1>
@@ -15,7 +14,6 @@ function Home(props) {
                 <img src={profilePic} alt="profile"/>
             </div>
         </div>
-    </header>
     );
   }
   
