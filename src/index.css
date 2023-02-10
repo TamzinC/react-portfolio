@@ -38,6 +38,12 @@ nav a.active {
   text-decoration: underline;
 }
 
+h1 {
+  color: #462920;
+  text-align: center;
+  margin: 20px;
+}
+
 form {
   width: 380px;
   display: flex;

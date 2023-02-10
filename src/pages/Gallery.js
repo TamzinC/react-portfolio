@@ -4,7 +4,7 @@ function Gallery(props) {
   
     return (
       <main>
-        <p>About Me - Gallery!</p>
+        <h1>About Me</h1>
 
       </main>
     )
