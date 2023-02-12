@@ -54,6 +54,14 @@ form {
 form > * {
   padding: 7px 10px;
   margin-bottom: 7px;
-  border: 1px solid #ccc;
+  border: 1px solid #d8cec4;
   outline: none;
+  color: #462920;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
 }

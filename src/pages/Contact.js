@@ -6,9 +6,10 @@ const styles = {
     margin: '20px 0'
   },
   btn: {
-    backgroundColor: 'lightseagreen',
+    backgroundColor: 'rgb(128, 108, 84)',
     color: '#fff',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    borderRadius: '5px'
   },
   success: {
     textAlign: 'center',
@@ -63,7 +64,7 @@ function Contact(props) {
 
 
 
-      console.log('form submitted!')
+      console.log('Form Submitted!')
       console.log(formData)
   };
   
@@ -84,7 +85,7 @@ function Contact(props) {
             value={formData.email} 
             onChange={handleChange} 
             type='text' 
-            placeholder='Enter your Email Address' />
+            placeholder='Enter your email address' />
           <textarea 
             name='message' 
             value={formData.message} 

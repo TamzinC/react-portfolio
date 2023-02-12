@@ -1,44 +1,63 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 function Gallery(props) {
   const styles = {
-    about: {
-      display: 'flex',
-      justifyContent: 'space-between'
+    wrapper: {
+      backgroundColor: '#EBD7C1',
+      padding: '50px',
+      color: '#462920'
     },
-    contact: {
-      display: 'flex',
-      flexDirection: 'column',
+    about: {
+      width: '500px',
+      margin: '0 auto',
+      textAlign: 'center'
+    },
+    skills: {
+      textAlign: 'center'
+    },
+    badges: {
+      height: '50px'
     }
+    // contact: {
+    //   display: 'flex',
+    //   flexDirection: 'column',
+    // },
+    // sides: {
+    //   display: 'flex',
+    //   justifyContent: 'space-between',
+    //   flexWrap: 'no-wrap',
+    // }
   }
   
     return (
       <main>
+          
         <h1>About Me</h1>
 
-        <div style={styles.about}>
-          <p>Coming from a Marketing background, I have experience in a variety of different aspects ranging from graphic design, marketing strategy and paid social advertising, as well as E-Commerce which involves daily management of a live website. I'm now looking to broaden my career by moving into web development and finding my next challenge!</p>
+        <div className="wrapper" style={styles.wrapper}>
 
-          <aside style={styles.contact}>
-            <a>GitHub</a>
-            <a>LinkedIn</a>
-            <a href="mailto:tamzin.chikhalia@gmail.com">Email</a>
-            <a>CV</a>
-          </aside>
+          <p style={styles.about}>I'm a marketing professional with a passion for design and have a background in graphic design, marketing strategy, paid social advertising and E-Commerce. I've recently decided to make a career switch to Front-End Web Development and I'm excited to bring my marketing mindset and design skills to the field!</p>
 
-          <section>
-            <ul>
+          <div className="sides" style={styles.sides}>
+            <section className="skills" style={styles.skills}>
               <h3>Skills</h3>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>JQuery</li>
-              <li>Bootstrap</li>
-              <li>moment.js</li>
-              <li>React</li>
-              <li>Node.js</li>
-            </ul>
-          </section>
+
+              <h5>Development:</h5>
+              <p>HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React, Node.js, JSON, Git & Git Version Control, JEST, APIs</p>
+
+              <h5>Transferable:</h5>
+              <p>Social media advertising, Graphic design, Adobe: Photoshop, Indesign and Illustrator, Attention to detail, Quick learner</p>
+            </section>
+
+            <aside>
+              <FontAwesomeIcon icon={faGithub} style={styles.badges}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faLinkedin} style={styles.badges}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faEnvelope} style={styles.badges} href="mailto:tamzin.chikhalia@gmail.com"></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faFilePdf} style={styles.badges}></FontAwesomeIcon>
+            </aside>
+          </div>
         </div>
 
       </main>
@@ -47,6 +66,11 @@ function Gallery(props) {
   
   export default Gallery;
 
+  // <a>GitHub</a>
+  // <a>LinkedIn</a>
+  // <a href="mailto:tamzin.chikhalia@gmail.com">Email</a>
+  // <a>CV</a>
+  
   /* Add:
    - Skills
    - Languages/key concepts

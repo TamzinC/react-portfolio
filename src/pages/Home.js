@@ -38,6 +38,8 @@ function Home(props) {
             <div className='intro' style={styles.intro}>
                 <h1>Hey, I'm Tamzin!</h1>
                 <p>Front-End Web Developer</p>
+
+                <p>Creating impactful and functional websites for memorable online presences.</p>
                 
                 <button style={styles.button} href="mailto:tamzin.chikhalia@gmail.com" role="button">Contact Me</button>
             </div>
