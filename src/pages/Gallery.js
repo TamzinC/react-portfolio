@@ -52,10 +52,18 @@ function Gallery(props) {
             </section>
 
             <aside>
-              <FontAwesomeIcon icon={faGithub} style={styles.badges}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faLinkedin} style={styles.badges}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faEnvelope} style={styles.badges} href="mailto:tamzin.chikhalia@gmail.com"></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faFilePdf} style={styles.badges}></FontAwesomeIcon>
+              <a href="https://github.com/TamzinC">
+                <FontAwesomeIcon icon={faGithub} style={styles.badges}></FontAwesomeIcon>
+              </a>
+              <a href="https://www.linkedin.com/in/tamzin-chikhalia-44a59a188/">
+                <FontAwesomeIcon icon={faLinkedin} style={styles.badges}></FontAwesomeIcon>
+              </a>
+              <a href="mailto:tamzin.chikhalia@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} style={styles.badges}></FontAwesomeIcon>
+              </a>
+              <a>
+                <FontAwesomeIcon icon={faFilePdf} style={styles.badges}></FontAwesomeIcon>
+              </a>
             </aside>
           </div>
         </div>
