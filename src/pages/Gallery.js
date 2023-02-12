@@ -18,8 +18,21 @@ function Gallery(props) {
       textAlign: 'center'
     },
     badges: {
-      height: '50px'
+      height: '50px',
+      margin: '15px'
+    },
+    h3: {
+      fontSize: '25px',
+      marginTop: '30px',
+      marginBottom: '15px'
+    },
+    aside: {
+      margin: '40px',
+      textAlign: 'center'
     }
+    // margin: {
+    //   margin: '10px'
+    // }
     // contact: {
     //   display: 'flex',
     //   flexDirection: 'column',
@@ -42,16 +55,16 @@ function Gallery(props) {
 
           <div className="sides" style={styles.sides}>
             <section className="skills" style={styles.skills}>
-              <h3>Skills</h3>
+              <h3 style={styles.h3}>Skills</h3>
 
-              <h5>Development:</h5>
+              <h4 style={{margin: '10px'}}>Development:</h4>
               <p>HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React, Node.js, JSON, Git & Git Version Control, JEST, APIs</p>
 
-              <h5>Transferable:</h5>
+              <h4 style={{marginTop: '20px', marginBottom: '10px'}}>Transferable:</h4>
               <p>Social media advertising, Graphic design, Adobe: Photoshop, Indesign and Illustrator, Attention to detail, Quick learner</p>
             </section>
 
-            <aside>
+            <aside style={styles.aside}>
               <a href="https://github.com/TamzinC">
                 <FontAwesomeIcon icon={faGithub} style={styles.badges}></FontAwesomeIcon>
               </a>
