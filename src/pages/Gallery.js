@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
 
 function Gallery(props) {
   const styles = {
@@ -40,9 +40,8 @@ function Gallery(props) {
 
       <div className="wrapper" style={styles.wrapper}>
         <p style={styles.about}>
-          I'm a marketing professional with a passion for design and have a
-          background in graphic design, marketing strategy, paid social
-          advertising and E-Commerce. I've recently decided to make a career
+          I'm a marketing professional with a passion for design. I hold experience in areas such as graphic design, marketing strategy, paid social
+          advertising and E-Commerce - just to name a few! I've recently decided to make a career
           switch to Front-End Web Development and I'm excited to bring my
           marketing mindset and design skills to the field!
         </p>
@@ -51,15 +50,15 @@ function Gallery(props) {
           <section className="skills" style={styles.skills}>
             <h3 style={styles.h3}>Skills</h3>
 
-            <h4 style={{ margin: "10px" }}>Development:</h4>
+            <h5 style={{ margin: "10px" }}>Development:</h5>
             <p>
               HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React,
               Node.js, JSON, Git & Git Version Control, JEST, APIs
             </p>
 
-            <h4 style={{ marginTop: "20px", marginBottom: "10px" }}>
+            <h5 style={{ marginTop: "20px", marginBottom: "10px" }}>
               Transferable:
-            </h4>
+            </h5>
             <p>
               Social media advertising, Graphic design, Adobe: Photoshop,
               Indesign and Illustrator, Attention to detail, Quick learner
@@ -94,45 +93,7 @@ function Gallery(props) {
           </aside>
         </div>
 
-        {props.challenges.map((challenge, index) => (
-          <div>
-            <Carousel variant="dark">
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  key={index}
-                  src={challenge.image}
-                  alt={challenge.title}
-                />
-                <Carousel.Caption>
-                  <h5 key={index}>{challenge.title}</h5>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  key={index}
-                  src={challenge.image}
-                  alt={challenge.title}
-                />
-                <Carousel.Caption>
-                  <h5 key={index}>{challenge.title}</h5>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  key={index}
-                  src={challenge.image}
-                  alt={challenge.title}
-                />
-                <Carousel.Caption>
-                  <h5 key={index}>{challenge.title}</h5>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </div>
-        ))};
+        
       </div>
     </main>
   );
@@ -140,16 +101,44 @@ function Gallery(props) {
 
 export default Gallery;
 
-// <a>GitHub</a>
-// <a>LinkedIn</a>
-// <a href="mailto:tamzin.chikhalia@gmail.com">Email</a>
-// <a>CV</a>
 
-/* Add:
-   - Skills
-   - Languages/key concepts
-   - linkedin
-   - github
-   - CV
-   - my email
-   - brief summary of projects */
+
+  //  {props.challenges.map((challenge, index) => (
+  //   <div>
+  //     <Carousel variant="dark">
+  //       <Carousel.Item>
+  //         <img
+  //           className="d-block w-100"
+  //           key={index}
+  //           src={challenge.image}
+  //           alt={challenge.title}
+  //         />
+  //         <Carousel.Caption>
+  //           <h5 key={index}>{challenge.title}</h5>
+  //         </Carousel.Caption>
+  //       </Carousel.Item>
+  //       <Carousel.Item>
+  //         <img
+  //           className="d-block w-100"
+  //           key={index}
+  //           src={challenge.image}
+  //           alt={challenge.title}
+  //         />
+  //         <Carousel.Caption>
+  //           <h5 key={index}>{challenge.title}</h5>
+  //         </Carousel.Caption>
+  //       </Carousel.Item>
+  //       <Carousel.Item>
+  //         <img
+  //           className="d-block w-100"
+  //           key={index}
+  //           src={challenge.image}
+  //           alt={challenge.title}
+  //         />
+  //         <Carousel.Caption>
+  //           <h5 key={index}>{challenge.title}</h5>
+  //         </Carousel.Caption>
+  //       </Carousel.Item>
+  //     </Carousel>
+  //   </div>
+  // ))};
