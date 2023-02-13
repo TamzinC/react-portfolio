@@ -1,7 +1,6 @@
 // import {useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import data from './data.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 import Header from './components/Header';

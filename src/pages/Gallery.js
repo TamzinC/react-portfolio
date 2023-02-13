@@ -10,6 +10,12 @@ function Gallery(props) {
       backgroundColor: "#EBD7C1",
       padding: "50px",
       color: "#462920",
+      marginLeft: "50px",
+      marginRight: '50px',
+      marginBottom: '20px',
+      marginTop: '30px',
+      borderRadius: '6px',
+      padding: '30px'
     },
     about: {
       width: "500px",
@@ -22,6 +28,7 @@ function Gallery(props) {
     badges: {
       height: "50px",
       margin: "15px",
+      color: "#462920"
     },
     h3: {
       fontSize: "25px",
@@ -36,7 +43,7 @@ function Gallery(props) {
 
   return (
     <main>
-      <h1>About Me</h1>
+      <h1 style={{marginBottom: '30px'}}>About Me</h1>
 
       <div className="wrapper" style={styles.wrapper}>
         <p style={styles.about}>
@@ -84,7 +91,7 @@ function Gallery(props) {
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a>
+            <a href="/manifest.json" target="_blank">
               <FontAwesomeIcon
                 icon={faFilePdf}
                 style={styles.badges}

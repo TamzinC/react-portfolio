@@ -4,40 +4,40 @@
         "description": "View the current and forecasted weather for any location using API data. The app was built using a combination of JQuery, Bootstrap, moment.js and CSS as well as localStorage for the 'Search History' feature.",
         "deployedURL": "https://tamzinc.github.io/weather-app/",
         "repo": "https://github.com/TamzinC/weather-app",
-        "image": "../images/weather-app.png"
+        "image": "./images/weather-app.png"
     },
     {
         "title": "Code Quiz",
         "description": "A quiz game to test your knowledge on coding! This quiz was built using Javascript and incorporates a countdown timer feature as well as the use of localStorage for the ability to save scores for a leaderboard.",
         "deployedURL": "https://tamzinc.github.io/code-quiz/index.html",
         "repo": "https://github.com/TamzinC/code-quiz",
-        "image": "../images/code-quiz.png"
+        "image": "./images/code-quiz.png"
     },
     {
         "title": "Find My Artist",
         "description": "A collaborative project, this was built using the Spotify API and a QR code API, allowing users to search any artist to display their top tracks. The QR code displays further information about the searched artist, whilst localStorage allows for the ability to save the users search history.",
         "deployedURL": "https://stansaner.github.io/song-search-app/",
         "repo": "https://github.com/TamzinC/find-my-artist",
-        "image": "../images/find-my-artist.png"
+        "image": "./images/find-my-artist.png"
     },
     {
         "title": "Password Generator",
         "description": "Using Javascript, this app uses data taken from user input to generate a password based upon the chosen preferences.",
         "deployedURL": "https://tamzinc.github.io/password-generator/",
         "repo": "https://github.com/TamzinC/password-generator",
-        "image": "../images/password-generator.png"
+        "image": "./images/password-generator.png"
     },
     {
         "title": "Work Day Scheduler",
         "description": "Built using JQuery and moment.js, this app allows users to organise their day by saving their tasks so they can be referred back to as and when needed. To keep track of time of day, the current hour is highlighted in red, future hours in green and any past hours in grey.",
         "deployedURL": "https://tamzinc.github.io/work-day-scheduler/",
         "repo": "https://github.com/TamzinC/work-day-scheduler",
-        "image": "../images/work-day-scheduler.png"
+        "image": "./images/work-day-scheduler.png"
     },
     {
         "title": "Team Profile Generator",
-        "deployedURL": "Build a team portal to quickly access your colleagues contact info! Using Node.js and the Inquirer package, this app displays a series of prompts for the user to add team members. Once complete, a html file is generated displaying all the data provided using Object-Oriented Programming.",
+        "description": "Build a team portal to quickly access your colleagues contact info! Using Node.js and the Inquirer package, this app displays a series of prompts for the user to add team members. Once complete, a html file is generated displaying all the data provided using Object-Oriented Programming.",
         "repo": "https://github.com/TamzinC/team-profile-generator",
-        "image": "../images/team-profile-generator.png"
+        "image": "./images/team-profile-generator.png"
     }
 ]

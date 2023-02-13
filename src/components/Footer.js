@@ -3,7 +3,7 @@
 function Footer(props) {
     return (
       <footer>
-        <p>&copy; 2023 - {props.title}</p>
+        <p>{props.title} &copy;2023</p>
       </footer>
     )
   }

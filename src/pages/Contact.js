@@ -9,12 +9,23 @@ const styles = {
     backgroundColor: 'rgb(128, 108, 84)',
     color: '#fff',
     cursor: 'pointer',
-    borderRadius: '5px'
+    borderRadius: '5px',
   },
   success: {
     textAlign: 'center',
     color: 'lightseagreen',
     marginTop: '15px'
+  },
+  wrapper: {
+    backgroundColor: "#EBD7C1",
+    padding: "50px",
+    color: "#462920",
+    marginLeft: "50px",
+    marginRight: '50px',
+    marginBottom: '20px',
+    marginTop: '30px',
+    borderRadius: '6px',
+    padding: '30px'
   }
 };
 
@@ -72,29 +83,30 @@ function Contact(props) {
       <>
         <h1 style={styles.header}>Contact Me</h1>
 
-
-        <form onSubmit={handleSubmit}>
-          <input 
-            name='name' 
-            value={formData.name} 
-            onChange={handleChange} 
-            type='text' 
-            placeholder='Enter your name' />
-          <input 
-            name='email' 
-            value={formData.email} 
-            onChange={handleChange} 
-            type='text' 
-            placeholder='Enter your email address' />
-          <textarea 
-            name='message' 
-            value={formData.message} 
-            onChange={handleChange} 
-            placeholder='Enter your message' 
-            cols='30' 
-            rows='10'></textarea>
-          <button style={(styles.btn)}>Submit</button>
-        </form>
+        <div className="wrapper" style={styles.wrapper}>
+          <form onSubmit={handleSubmit}>
+            <input 
+              name='name' 
+              value={formData.name} 
+              onChange={handleChange} 
+              type='text' 
+              placeholder='Enter your name' />
+            <input 
+              name='email' 
+              value={formData.email} 
+              onChange={handleChange} 
+              type='text' 
+              placeholder='Enter your email address' />
+            <textarea 
+              name='message' 
+              value={formData.message} 
+              onChange={handleChange} 
+              placeholder='Enter your message' 
+              cols='30' 
+              rows='10'></textarea>
+            <button style={(styles.btn)}>Submit</button>
+          </form>
+        </div>
 
         {success && <p style={styles.success}>Form Submitted Sucessfully!</p>}
       </>
