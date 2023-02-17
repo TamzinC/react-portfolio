@@ -11,11 +11,11 @@ function Gallery(props) {
       padding: "50px",
       color: "#462920",
       marginLeft: "50px",
-      marginRight: '50px',
-      marginBottom: '20px',
-      marginTop: '30px',
-      borderRadius: '6px',
-      padding: '30px'
+      marginRight: "50px",
+      marginBottom: "20px",
+      marginTop: "30px",
+      borderRadius: "6px",
+      padding: "30px",
     },
     about: {
       width: "500px",
@@ -28,7 +28,7 @@ function Gallery(props) {
     badges: {
       height: "50px",
       margin: "15px",
-      color: "#462920"
+      color: "#462920",
     },
     h3: {
       fontSize: "25px",
@@ -43,16 +43,16 @@ function Gallery(props) {
 
   return (
     <main>
-      <h1 style={{marginBottom: '30px'}}>About Me</h1>
+      <h1 style={{ marginBottom: "30px" }}>About Me</h1>
 
       <div className="wrapper" style={styles.wrapper}>
-        <p style={styles.about}>
-          I'm a marketing professional with a passion for design. I hold experience in areas such as graphic design, marketing strategy, paid social
-          advertising and E-Commerce - just to name a few! I've recently decided to make a career
-          switch to Front-End Web Development and I'm excited to bring my
-          marketing mindset and design skills to the field!
+        <p className="about" style={styles.about}>
+          I'm a marketing professional with a passion for design. I hold
+          experience in areas such as graphic design, marketing strategy, paid
+          social advertising and E-Commerce - just to name a few! I've recently
+          decided to make a career switch to Front-End Web Development and I'm
+          excited to bring my marketing mindset and design skills to the field!
         </p>
-
         <div>
           <section className="skills" style={styles.skills}>
             <h3 style={styles.h3}>Skills</h3>
@@ -91,7 +91,7 @@ function Gallery(props) {
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a href="/manifest.json" target="_blank">
+            <a href="/assets/tamzin_cv.pdf" target="_blank">
               <FontAwesomeIcon
                 icon={faFilePdf}
                 style={styles.badges}
@@ -99,8 +99,6 @@ function Gallery(props) {
             </a>
           </aside>
         </div>
-
-        
       </div>
     </main>
   );
@@ -108,44 +106,42 @@ function Gallery(props) {
 
 export default Gallery;
 
-
-
-  //  {props.challenges.map((challenge, index) => (
-  //   <div>
-  //     <Carousel variant="dark">
-  //       <Carousel.Item>
-  //         <img
-  //           className="d-block w-100"
-  //           key={index}
-  //           src={challenge.image}
-  //           alt={challenge.title}
-  //         />
-  //         <Carousel.Caption>
-  //           <h5 key={index}>{challenge.title}</h5>
-  //         </Carousel.Caption>
-  //       </Carousel.Item>
-  //       <Carousel.Item>
-  //         <img
-  //           className="d-block w-100"
-  //           key={index}
-  //           src={challenge.image}
-  //           alt={challenge.title}
-  //         />
-  //         <Carousel.Caption>
-  //           <h5 key={index}>{challenge.title}</h5>
-  //         </Carousel.Caption>
-  //       </Carousel.Item>
-  //       <Carousel.Item>
-  //         <img
-  //           className="d-block w-100"
-  //           key={index}
-  //           src={challenge.image}
-  //           alt={challenge.title}
-  //         />
-  //         <Carousel.Caption>
-  //           <h5 key={index}>{challenge.title}</h5>
-  //         </Carousel.Caption>
-  //       </Carousel.Item>
-  //     </Carousel>
-  //   </div>
-  // ))};
+//  {props.challenges.map((challenge, index) => (
+//   <div>
+//     <Carousel variant="dark">
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           key={index}
+//           src={challenge.image}
+//           alt={challenge.title}
+//         />
+//         <Carousel.Caption>
+//           <h5 key={index}>{challenge.title}</h5>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           key={index}
+//           src={challenge.image}
+//           alt={challenge.title}
+//         />
+//         <Carousel.Caption>
+//           <h5 key={index}>{challenge.title}</h5>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           key={index}
+//           src={challenge.image}
+//           alt={challenge.title}
+//         />
+//         <Carousel.Caption>
+//           <h5 key={index}>{challenge.title}</h5>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//     </Carousel>
+//   </div>
+// ))};
