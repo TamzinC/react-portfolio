@@ -10,6 +10,8 @@ const styles = {
     color: '#fff',
     cursor: 'pointer',
     borderRadius: '5px',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
   success: {
     textAlign: 'center',

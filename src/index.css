@@ -71,7 +71,7 @@ button:hover {
 }
 
 form {
-  width: 380px;
+  width: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -99,13 +99,5 @@ footer {
   header {
     font-size: 12px;
   }
-
-  /* .intro-image {
-    height: 20px;
-    width: 20px;
-  } */
-
-  .about {
-    width: 100px;
-  }
+  
 }

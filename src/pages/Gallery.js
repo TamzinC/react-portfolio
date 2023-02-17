@@ -18,7 +18,7 @@ function Gallery(props) {
       padding: "30px",
     },
     about: {
-      width: "500px",
+      width: "auto",
       margin: "0 auto",
       textAlign: "center",
     },
@@ -73,19 +73,19 @@ function Gallery(props) {
           </section>
 
           <aside style={styles.aside}>
-            <a href="https://github.com/TamzinC">
+            <a href="https://github.com/TamzinC" target="_blank">
               <FontAwesomeIcon
                 icon={faGithub}
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a href="https://www.linkedin.com/in/tamzin-chikhalia-44a59a188/">
+            <a href="https://www.linkedin.com/in/tamzin-chikhalia-44a59a188/" target="_blank">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a href="mailto:tamzin.chikhalia@gmail.com">
+            <a href="mailto:tamzin.chikhalia@gmail.com" target="_blank">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 style={styles.badges}

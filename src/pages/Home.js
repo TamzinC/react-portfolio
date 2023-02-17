@@ -17,7 +17,9 @@ function Home(props) {
         intro: {
             marginTop: '30px',
             textAlign: 'center',
-            lineHeight: '40px'
+        },
+        margin: {
+            margin: '20px'
         }
       }
     
@@ -28,9 +30,9 @@ function Home(props) {
             </div>
             <div className='intro' style={styles.intro}>
                 <h1>Hey, I'm Tamzin!</h1>
-                <p>Front-End Web Developer</p>
+                <p style={styles.margin}>Front-End Web Developer</p>
 
-                <p>Creating impactful and functional websites for memorable online presences.</p>
+                <p style={styles.margin}>Creating impactful and functional websites for memorable online presences.</p>
                 
                 <button>
                     <a href="mailto:tamzin.chikhalia@gmail.com">Contact Me</a>
