@@ -22,6 +22,7 @@ function Project(props) {
   return (
     <>
       <h1 style={{ marginBottom: "30px" }}>Projects</h1>
+      {/* Mapping over array of objects to list each of the indexes */}
       {props.challenges.map((challenge, index) => (
         <div style={styles.projects}>
           <h2 style={styles.marginText}>{challenge.title}</h2>
@@ -29,6 +30,7 @@ function Project(props) {
           <p style={styles.marginText}>{challenge.description}</p>
 
           <div className="btn" style={styles.btn}>
+            {/* Using conditional statement to show a deployed url depending on whether there is data available - if no data then url button will not be shown */}
             {challenge.deployedURL && (
               <button>
                 <a href={challenge.deployedURL} target="_blank">

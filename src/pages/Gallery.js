@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
-// import Carousel from "react-bootstrap/Carousel";
 
 function Gallery(props) {
   const styles = {
@@ -105,43 +104,3 @@ function Gallery(props) {
 }
 
 export default Gallery;
-
-//  {props.challenges.map((challenge, index) => (
-//   <div>
-//     <Carousel variant="dark">
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           key={index}
-//           src={challenge.image}
-//           alt={challenge.title}
-//         />
-//         <Carousel.Caption>
-//           <h5 key={index}>{challenge.title}</h5>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           key={index}
-//           src={challenge.image}
-//           alt={challenge.title}
-//         />
-//         <Carousel.Caption>
-//           <h5 key={index}>{challenge.title}</h5>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img
-//           className="d-block w-100"
-//           key={index}
-//           src={challenge.image}
-//           alt={challenge.title}
-//         />
-//         <Carousel.Caption>
-//           <h5 key={index}>{challenge.title}</h5>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   </div>
-// ))};
