@@ -16,7 +16,7 @@ function Project(props) {
     },
     marginText: {
       marginBottom: "20px"
-    }
+    },
   };
 
   return (
@@ -25,7 +25,7 @@ function Project(props) {
       {props.challenges.map((challenge, index) => (
         <div style={styles.projects}>
           <h2 style={styles.marginText}>{challenge.title}</h2>
-          <img style={styles.marginText} src={challenge.image}></img>
+          <img style={styles.marginText}src={challenge.image}></img>
           <p style={styles.marginText}>{challenge.description}</p>
 
           <div className="btn" style={styles.btn}>

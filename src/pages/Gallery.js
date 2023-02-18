@@ -91,7 +91,7 @@ function Gallery(props) {
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a href="/assets/tamzin_cv.pdf" target="_blank">
+            <a href="./assets/tamzin_cv.pdf" target="_blank">
               <FontAwesomeIcon
                 icon={faFilePdf}
                 style={styles.badges}
