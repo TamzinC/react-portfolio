@@ -1,5 +1,4 @@
 # react-portfolio
-# team-profile-generator
 
 ## Description
 
