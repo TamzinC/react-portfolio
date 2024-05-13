@@ -46,12 +46,15 @@ function Gallery(props) {
 
       <div className="wrapper" style={styles.wrapper}>
         <p className="about" style={styles.about}>
-          I'm a marketing professional with a passion for design. I hold
+          With a strong foundation in Marketing and a passion for design, I've thrived in areas like graphic design, marketing strategy, paid social advertising, and E-Commerce. Now transitioning to Front-End Web Development, I'm eager to fuse my marketing savvy with design expertise to create impactful online experiences.
+        </p> 
+        {/* <p className="about" style={styles.about}>
+          With a background in Marketing, I have a passion for design. I hold
           experience in areas such as graphic design, marketing strategy, paid
           social advertising and E-Commerce - just to name a few! I've recently
           decided to make a career switch to Front-End Web Development and I'm
           excited to bring my marketing mindset and design skills to the field!
-        </p>
+        </p> */}
         <div>
           <section className="skills" style={styles.skills}>
             <h3 style={styles.h3}>Skills</h3>
@@ -59,15 +62,15 @@ function Gallery(props) {
             <h5 style={{ margin: "10px" }}>Development:</h5>
             <p>
               HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React,
-              Node.js, JSON, Git & Git Version Control, JEST, APIs
+              Node.js, JSON, Git & Git Version Control, JEST, APIs, Next.js, Vercel
             </p>
 
             <h5 style={{ marginTop: "20px", marginBottom: "10px" }}>
               Transferable:
             </h5>
             <p>
-              Social media advertising, Graphic design, Adobe: Photoshop,
-              Indesign and Illustrator, Attention to detail, Quick learner
+              Social media management, Graphic design, Adobe: Photoshop,
+              Indesign and Illustrator, Attention to detail, Quick learner & Continuous learning, Creative, Customer/UX understanding, Analytical
             </p>
           </section>
 
