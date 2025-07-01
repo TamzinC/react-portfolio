@@ -1,5 +1,12 @@
 [
     {
+        "title": "Rock, Paper, Scissors Game",
+        "description": "A fun, browser-based Rock, Paper, Scissors game where you face off against the computer. Built with HTML5, CSS3, and modern JavaScript (ES6), the game features interactive buttons, dynamic score tracking, and instant result feedback — all in a clean, responsive layout.",
+        "deployedURL": "https://tamzinc.github.io/rock_paper_scissors/",
+        "repo": "https://github.com/TamzinC/rock_paper_scissors",
+        "image": "./images/rock-paper-scissors.png"
+    },
+    {
         "title": "Weather App",
         "description": "View the current and forecasted weather for any location using API data. The app was built using a combination of JQuery, Bootstrap, moment.js and CSS as well as localStorage for the 'Search History' feature.",
         "deployedURL": "https://tamzinc.github.io/weather-app/",
