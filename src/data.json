@@ -1,6 +1,6 @@
 [
     {
-        "title": "Rock, Paper, Scissors Game",
+        "title": "Rock, Paper, Scissors",
         "description": "A fun, browser-based Rock, Paper, Scissors game where you face off against the computer. Built with HTML5, CSS3, and modern JavaScript (ES6), the game features interactive buttons, dynamic score tracking, and instant result feedback — all in a clean, responsive layout.",
         "deployedURL": "https://tamzinc.github.io/rock_paper_scissors/",
         "repo": "https://github.com/TamzinC/rock_paper_scissors",

@@ -87,7 +87,7 @@ function Gallery(props) {
                 style={styles.badges}
               ></FontAwesomeIcon>
             </a>
-            <a href="mailto:tamzin.chikhalia@gmail.com" target="_blank">
+            <a href="mailto:tamzinchikhalia@gmail.com" target="_blank">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 style={styles.badges}

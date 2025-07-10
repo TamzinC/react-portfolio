@@ -35,7 +35,7 @@ function Home(props) {
                 <p style={styles.margin}>Creating impactful and functional websites for memorable online presences.</p>
                 
                 <button>
-                    <a href="mailto:tamzin.chikhalia@gmail.com">Contact Me</a>
+                    <a href="mailto:tamzinchikhalia@gmail.com">Contact Me</a>
                 </button>
             </div>
         </div>
