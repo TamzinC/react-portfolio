@@ -1,0 +1,19 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: #ebd7c1;
+  color: #462920;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.marginText {
+  margin-bottom: 20px;
+}

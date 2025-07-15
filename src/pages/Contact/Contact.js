@@ -1,35 +1,5 @@
 import {useState} from 'react';
-
-const styles = {
-  header: {
-    textAlign: 'center',
-    margin: '20px 0'
-  },
-  btn: {
-    backgroundColor: 'rgb(128, 108, 84)',
-    color: '#fff',
-    cursor: 'pointer',
-    borderRadius: '5px',
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  },
-  success: {
-    textAlign: 'center',
-    color: 'lightseagreen',
-    marginTop: '15px'
-  },
-  wrapper: {
-    backgroundColor: "#EBD7C1",
-    padding: "50px",
-    color: "#462920",
-    marginLeft: "50px",
-    marginRight: '50px',
-    marginBottom: '20px',
-    marginTop: '30px',
-    borderRadius: '6px',
-    padding: '30px'
-  }
-};
+import styles from './Contact.module.css';
 
 function Contact(props) {
   const [success, setSuccess] = useState(false);
@@ -83,9 +53,9 @@ function Contact(props) {
   
     return (
       <>
-        <h1 style={styles.header}>Contact Me</h1>
+        <h1 className={styles.header}>Contact Me</h1>
 
-        <div className="wrapper" style={styles.wrapper}>
+        <div className={styles.wrapper}>
           <form onSubmit={handleSubmit}>
             <input 
               name='name' 
@@ -106,11 +76,11 @@ function Contact(props) {
               placeholder='Enter your message' 
               cols='30' 
               rows='10'></textarea>
-            <button style={(styles.btn)}>Submit</button>
+            <button className={(styles.btn)}>Submit</button>
           </form>
         </div>
 
-        {success && <p style={styles.success}>Form Submitted Sucessfully!</p>}
+        {success && <p className={styles.success}>Form Submitted Sucessfully!</p>}
       </>
     )
   }

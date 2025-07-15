@@ -23,8 +23,8 @@ function Header(props) {
 
             <nav>
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/gallery'>About Me</NavLink>
-                <NavLink to='/project'>Projects</NavLink>
+                <NavLink to='/about'>About Me</NavLink>
+                <NavLink to='/projects'>Projects</NavLink>
                 <NavLink to='/contact'>Contact</NavLink>
             </nav>
         </header>

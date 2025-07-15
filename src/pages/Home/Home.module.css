@@ -1,0 +1,22 @@
+.hero {
+  padding: 50px;
+  background-color: #ebd7c1;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 300px;
+  width: 320px;
+}
+
+.intro {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.margin {
+  margin: 20px;
+}
