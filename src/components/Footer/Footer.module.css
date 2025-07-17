@@ -1,10 +1,19 @@
-footer {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 30px;
-  background-color: #fff;
-  text-align: center;
+  height: auto;
+  box-sizing: border-box;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+
 
   /* replicating header: */
   /* background: rgba(255, 255, 255, 0.15);
@@ -38,3 +47,127 @@ footer {
   text-align: center;
   border-top: 1px solid #eee; */
 }
+
+.footerVisible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.caption {
+  margin: 0;
+  font-size: 15px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 12px;
+}
+
+.footerTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.socialBadge {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.socialBadge:hover {
+  animation: rainbowColorShift 2.5s linear infinite;
+  transform: scale(1.1);
+}
+
+.iconLink:hover .socialBadge svg path {
+  fill: url(#rainbow-gradient);
+}
+
+
+@keyframes rainbowColorShift {
+  0%   { color: #ffb3ba; }  /* pastel red */
+  20%  { color: #ffdfba; }  /* pastel orange */
+  40%  { color: #ffffba; }  /* pastel yellow */
+  60%  { color: #baffc9; }  /* pastel green */
+  80%  { color: #bae1ff; }  /* pastel blue */
+  100% { color: #ffb3ba; }  /* back to pastel red */
+}
+
+/* @keyframes pastelPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #ffb3ba,
+      0 0 10px #ffdfba,
+      0 0 15px #ffffba,
+      0 0 20px #baffc9,
+      0 0 25px #bae1ff;
+    color: #ffb3ba;
+  }
+
+  25% {
+    text-shadow:
+      0 0 10px #ffdfba,
+      0 0 15px #ffffba,
+      0 0 20px #baffc9,
+      0 0 25px #bae1ff,
+      0 0 30px #ffb3ba;
+    color: #ffdfba;
+  }
+
+  50% {
+    text-shadow:
+      0 0 15px #ffffba,
+      0 0 20px #baffc9,
+      0 0 25px #bae1ff,
+      0 0 30px #ffb3ba,
+      0 0 35px #ffdfba;
+    color: #ffffba;
+  }
+
+  75% {
+    text-shadow:
+      0 0 20px #baffc9,
+      0 0 25px #bae1ff,
+      0 0 30px #ffb3ba,
+      0 0 35px #ffdfba,
+      0 0 40px #ffffba;
+    color: #baffc9;
+  }
+}
+
+
+@keyframes rainbowStrokeGlow {
+  0%, 100% {
+    stroke: #ffb3ba;
+    filter: drop-shadow(0 0 4px #ffb3ba);
+  }
+  20% {
+    stroke: #ffdfba;
+    filter: drop-shadow(0 0 4px #ffdfba);
+  }
+  40% {
+    stroke: #ffffba;
+    filter: drop-shadow(0 0 4px #ffffba);
+  }
+  60% {
+    stroke: #baffc9;
+    filter: drop-shadow(0 0 4px #baffc9);
+  }
+  80% {
+    stroke: #bae1ff;
+    filter: drop-shadow(0 0 4px #bae1ff);
+  }
+} */
