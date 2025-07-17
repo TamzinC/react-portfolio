@@ -3,14 +3,36 @@
   margin: 20px 0;
 }
 
-.btn {
+form {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+form > * {
+  padding: 7px 10px;
+  margin-bottom: 7px;
+  border-radius: 10px;;
+  border: 1px solid #d8cec4;
+  outline: none;
+  color: #462920;
+}
+
+.contactBtn {
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+  text-align: center;
+}
+/* .btn {
   background-color: rgb(128, 108, 84);
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .success {
   text-align: center;
@@ -19,7 +41,7 @@
 }
 
 .wrapper {
-  background-color: #ebd7c1;
+  /* background-color: #ebd7c1; */
   padding: 50px;
   color: #462920;
   margin-left: 50px;

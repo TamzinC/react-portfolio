@@ -9,7 +9,7 @@ function Projects(props) {
       {props.challenges.map((challenge, index) => (
         <div className={styles.projectCard} key={index}>
           <h2 className={styles.marginText}>{challenge.title}</h2>
-          <img className={styles.marginText} src={challenge.image}></img>
+          <img className={styles.projectImg} src={challenge.image}></img>
           <p className={styles.marginText}>{challenge.description}</p>
 
           <div className={styles.btn}>

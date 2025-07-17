@@ -5,7 +5,7 @@ function Home(props) {
     return (
         <div className={styles.hero}>
             <div>
-                <img src='./images/profile-pic.PNG' alt="profile" className={styles.img} />
+                <img src='./images/profile-pic.PNG' alt="profile" className={styles.heroImg} />
             </div>
             <div className={styles.intro}>
                 <h1>Hey, I'm Tamzin!</h1>

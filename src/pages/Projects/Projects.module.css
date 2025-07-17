@@ -4,10 +4,16 @@
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
-  background-color: #ebd7c1;
+  /* background-color: #ebd7c1; */
   color: #462920;
   border-radius: 6px;
   padding: 40px;
+}
+
+.projectImg {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .btn {

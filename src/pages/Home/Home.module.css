@@ -1,9 +1,9 @@
 .hero {
   padding: 50px;
-  background-color: #ebd7c1;
+  /* background-color: #ebd7c1; */
 }
 
-img {
+.heroImg {
   display: block;
   margin-left: auto;
   margin-right: auto;

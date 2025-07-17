@@ -76,7 +76,7 @@ function Contact(props) {
               placeholder='Enter your message' 
               cols='30' 
               rows='10'></textarea>
-            <button className={(styles.btn)}>Submit</button>
+            <button className={(styles.contactBtn)}>Submit</button>
           </form>
         </div>
 
