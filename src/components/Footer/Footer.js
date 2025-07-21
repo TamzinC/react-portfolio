@@ -68,6 +68,28 @@ function Footer(props) {
 
   return (
     <footer className={`${styles.footer} ${visible ? styles.footerVisible : ""}`}>
+      {/* SVG gradient definition for the social icons */}
+      <svg width="0" height="0">
+        <defs>
+          <linearGradient
+            id="rainbow-gradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stopColor="red" />
+            <stop offset="14%" stopColor="orange" />
+            <stop offset="28%" stopColor="yellow" />
+            <stop offset="42%" stopColor="green" />
+            <stop offset="57%" stopColor="blue" />
+            <stop offset="71%" stopColor="indigo" />
+            <stop offset="85%" stopColor="violet" />
+            <stop offset="100%" stopColor="red" />
+          </linearGradient>
+        </defs>
+      </svg>
+
       <div style={{width: "100px"}}></div> {/* Placeholder for spacing */}
 
       <div className={styles.footerTxt}>

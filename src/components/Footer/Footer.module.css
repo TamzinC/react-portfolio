@@ -14,38 +14,12 @@
   opacity: 0;
   pointer-events: none;
 
-
-  /* replicating header: */
-  /* background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px 12px 0 0;
-  padding: 20px;
-  text-align: center;
-  color: #462920;
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.05); */
-
-  /* muted solid or gradient footer: */
-  /* background: linear-gradient(to right, #f7efe6, #f4e6d7);
-  color: #462920;
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #e0d3c4; */
-
   /* glassmorphic with fade overlay: */
   background: rgba(255, 255, 255, 0.05);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   text-align: center;
   color: #462920;
-
-  /* simple sticky bottom footer: */
-  /* background: #fff;
-  padding: 15px;
-  color: #888;
-  font-size: 0.9rem;
-  text-align: center;
-  border-top: 1px solid #eee; */
 }
 
 .footerVisible {
@@ -75,12 +49,12 @@
 .socialIcons {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-shrink: 0;
 }
 
 .socialBadge {
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -105,69 +79,3 @@
   80%  { color: #bae1ff; }  /* pastel blue */
   100% { color: #ffb3ba; }  /* back to pastel red */
 }
-
-/* @keyframes pastelPulse {
-  0%, 100% {
-    text-shadow:
-      0 0 5px #ffb3ba,
-      0 0 10px #ffdfba,
-      0 0 15px #ffffba,
-      0 0 20px #baffc9,
-      0 0 25px #bae1ff;
-    color: #ffb3ba;
-  }
-
-  25% {
-    text-shadow:
-      0 0 10px #ffdfba,
-      0 0 15px #ffffba,
-      0 0 20px #baffc9,
-      0 0 25px #bae1ff,
-      0 0 30px #ffb3ba;
-    color: #ffdfba;
-  }
-
-  50% {
-    text-shadow:
-      0 0 15px #ffffba,
-      0 0 20px #baffc9,
-      0 0 25px #bae1ff,
-      0 0 30px #ffb3ba,
-      0 0 35px #ffdfba;
-    color: #ffffba;
-  }
-
-  75% {
-    text-shadow:
-      0 0 20px #baffc9,
-      0 0 25px #bae1ff,
-      0 0 30px #ffb3ba,
-      0 0 35px #ffdfba,
-      0 0 40px #ffffba;
-    color: #baffc9;
-  }
-}
-
-
-@keyframes rainbowStrokeGlow {
-  0%, 100% {
-    stroke: #ffb3ba;
-    filter: drop-shadow(0 0 4px #ffb3ba);
-  }
-  20% {
-    stroke: #ffdfba;
-    filter: drop-shadow(0 0 4px #ffdfba);
-  }
-  40% {
-    stroke: #ffffba;
-    filter: drop-shadow(0 0 4px #ffffba);
-  }
-  60% {
-    stroke: #baffc9;
-    filter: drop-shadow(0 0 4px #baffc9);
-  }
-  80% {
-    stroke: #bae1ff;
-    filter: drop-shadow(0 0 4px #bae1ff);
-  }
-} */
