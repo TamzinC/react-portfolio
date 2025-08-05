@@ -8,12 +8,12 @@ import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 function About(props) {
 
   return (
-    <main>
+    <div>
       <h1>About Me</h1>
 
-      <div className={styles.wrapper}>
+      <div className={styles.aboutContainer}>
         <p className={styles.about}>
-          With a strong foundation in Marketing and a passion for design, I've thrived in areas like graphic design, marketing strategy, paid social advertising, and E-Commerce. Now transitioning to Front-End Web Development, I'm eager to fuse my marketing savvy with design expertise to create impactful online experiences.
+          With a strong foundation in Marketing and a passion for design, I've thrived in areas like graphic design, marketing strategy, paid social advertising, and E-Commerce. Now transitioning into Front-End Web Development, I'm eager to fuse my marketing savvy with design expertise to create impactful online experiences.
         </p> 
         {/* <p className="about" style={styles.about}>
           With a background in Marketing, I have a passion for design. I hold
@@ -22,14 +22,18 @@ function About(props) {
           decided to make a career switch to Front-End Web Development and I'm
           excited to bring my marketing mindset and design skills to the field!
         </p> */}
+        <img src="/images/memoji-6.png" className={styles.aboutImage} />
+      </div>
+
+      <div className={styles.wrapper}>
         <div>
           <section className={styles.skills}>
             <h3 className={styles.h3}>Skills</h3>
 
             <h5>Development:</h5>
             <p>
-              HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React,
-              Node.js, JSON, Git & Git Version Control, JEST, APIs, Next.js, Vercel
+              HTML, CSS, Javascript, JQuery, JSX, Bootstrap, moment.js, React, npm, 
+              Node.js, JSON, Git & Git Version Control, JEST, APIs, Next.js, Vercel, Sanity
             </p>
 
             <h5>
@@ -69,7 +73,7 @@ function About(props) {
           </aside>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 
