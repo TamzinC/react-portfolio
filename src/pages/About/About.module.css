@@ -1,7 +1,7 @@
 .wrapper {
   /* background-color: #ebd7c1; */
   padding: 50px;
-  color: #462920;
+  /* color: #462920; */
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
@@ -23,7 +23,26 @@
 .badges {
   height: 50px;
   margin: 15px;
-  color: #462920;
+  /* color: #462920; */
+}
+
+.badges:hover {
+  animation: rainbowColorShift 2.5s linear infinite;
+  transform: scale(1.1);
+}
+
+.iconLink:hover .badges svg path {
+  fill: url(#rainbow-gradient);
+}
+
+
+@keyframes rainbowColorShift {
+  0%   { color: #ffb3ba; }  /* pastel red */
+  20%  { color: #ffdfba; }  /* pastel orange */
+  40%  { color: #ffffba; }  /* pastel yellow */
+  60%  { color: #baffc9; }  /* pastel green */
+  80%  { color: #bae1ff; }  /* pastel blue */
+  100% { color: #ffb3ba; }  /* back to pastel red */
 }
 
 h3 {

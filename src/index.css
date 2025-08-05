@@ -10,8 +10,19 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+
+  /* font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff; */
+
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #fff;
+
+
   /* background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
   /* background: linear-gradient(135deg, #ff4e50, #f9d423);
   /* background: linear-gradient(135deg, #d16ba5 0%, #c777b9 20%, #ba83ca 40%, #f68084 60%, #f9d423 100%); */
@@ -26,7 +37,11 @@ body {
 
 
 h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
   color: #fff;
+  font-size: 40px;
   /* color: #462920; */
   text-align: center;
   margin: 20px;
@@ -69,6 +84,9 @@ button {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button:hover::before {

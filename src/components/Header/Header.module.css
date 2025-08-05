@@ -61,4 +61,8 @@
 
 .headerName {
     margin: 0 0 0 10px;
+    font-family: "Passions Conflict", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
 }
