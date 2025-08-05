@@ -28,7 +28,7 @@
 }
 
 .navLink:hover {
-  color: #462920;
+  color: #BBDDEE;
 }
 
 .navLink:not(:last-child) {
@@ -36,7 +36,8 @@
 }
 
 .navLinkActive {
-  color: #462920;
+  /* color: #462920; */
+  color: #FFCB77;
 }
 
 .headerIcon {
@@ -65,4 +66,8 @@
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
+}
+
+.headerName:hover {
+  color: #BBDDEE;
 }
