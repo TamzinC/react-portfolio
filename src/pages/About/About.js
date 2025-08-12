@@ -17,6 +17,7 @@ import {
 import { FaNodeJs } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { BiTimeFive } from "react-icons/bi";
+import { PiFileJsx } from "react-icons/pi";
 
 // Frameworks/Tools:
 import {
@@ -28,6 +29,7 @@ import {
   SiGithub,
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa";
 
 // Design:
 import {
@@ -92,6 +94,9 @@ function About(props) {
                   <SiJquery className={styles.icon} /> jQuery
                 </li>
                 <li>
+                  <PiFileJsx className={styles.icon} /> JSX
+                </li>
+                <li>
                   <TbApi className={styles.icon} /> APIs
                 </li>
                 <li>
@@ -132,6 +137,9 @@ function About(props) {
                 </li>
                 <li>
                   <SiGithub className={styles.icon} /> GitHub
+                </li>
+                <li>
+                  <FaGitAlt className={styles.icon} /> Git
                 </li>
                 <li>
                   <BiLogoVisualStudio className={styles.icon} /> VS Code
