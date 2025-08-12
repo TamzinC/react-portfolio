@@ -204,7 +204,7 @@ function About(props) {
 
           <aside className={styles.aside}>
             {/* <p>Contact and Social Links</p> */}
-            <p>The good stuff's here 👀</p>
+            <p>Psst... The good stuff's here 👀</p>
             <a href="https://github.com/TamzinC" target="_blank">
               <FontAwesomeIcon
                 icon={faGithub}
