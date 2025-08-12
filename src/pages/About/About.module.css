@@ -33,7 +33,7 @@
 }
 
 .skillsWrapper {
-  padding: 60px;
+  padding: 50px;
 }
 
 .skills {
@@ -65,7 +65,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 6px;
   list-style-type: none;
 }
 
@@ -73,6 +73,13 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
