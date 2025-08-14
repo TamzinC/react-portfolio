@@ -27,6 +27,7 @@ import {
   SiVercel,
   SiSanity,
   SiGithub,
+  SiShopify
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
@@ -143,6 +144,9 @@ function About(props) {
                 </li>
                 <li>
                   <BiLogoVisualStudio className={styles.icon} /> VS Code
+                </li>
+                <li>
+                  <SiShopify className={styles.icon} /> Shopify
                 </li>
               </ul>
             </div>
