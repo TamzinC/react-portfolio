@@ -84,11 +84,11 @@ function Projects({ challenges }) {
 
   return (
     <>
-      <h1 className={styles.marginText}>Projects</h1>
+      <h1>Projects</h1>
 
       {professionalProjects.length > 0 && (
         <>
-          <h2 className={styles.marginText}>Professional Projects</h2>
+          <h2 className={styles.projectsHeading}>Professional Projects</h2>
           <div className={styles.projectContainer}>
             {renderProjects(professionalProjects, "professional")}
           </div>
@@ -97,7 +97,7 @@ function Projects({ challenges }) {
 
       {personalProjects.length > 0 && (
         <>
-          <h2 className={styles.marginText}>Personal Projects</h2>
+          <h2 className={styles.projectsHeading}>Personal Projects</h2>
           <div className={styles.projectContainer}>
             {renderProjects(personalProjects, "personal")}
           </div>
