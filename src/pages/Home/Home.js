@@ -46,7 +46,7 @@ function Home(props) {
     return (
         <div className={styles.hero}>
             <div>
-                <img src='./images/memoji-1.png' alt="profile" className={styles.heroImg} />
+                <img src="%PUBLIC_URL%/images/memoji-1.PNG" alt="profile" className={styles.heroImg} />
             </div>
             <div className={styles.intro}>
                 <h1>Hey, I'm Tamzin!</h1>
