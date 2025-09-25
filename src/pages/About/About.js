@@ -72,7 +72,7 @@ function About(props) {
           decided to make a career switch to Front-End Web Development and I'm
           excited to bring my marketing mindset and design skills to the field!
         </p> */}
-        <img src="%PUBLIC_URL%/images/memoji-6.PNG" alt="profile" className={styles.aboutImage} />
+        <img src={`${process.env.PUBLIC_URL}/images/memoji-6.png`} alt="profile" className={styles.aboutImage} />
       </div>
 
       <div className={styles.skillsWrapper}>

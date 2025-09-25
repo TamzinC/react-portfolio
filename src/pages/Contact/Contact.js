@@ -57,7 +57,7 @@ function Contact(props) {
 
         <div className={styles.laptopWrapper}>
           <img
-          src= "%PUBLIC_URL%/images/macbook-edit.png"
+          src= {`${process.env.PUBLIC_URL}/images/macbook-edit.png`}
           alt= "Macbook"
           className={styles.laptopImage} />
           <form onSubmit={handleSubmit} className={styles.contactForm}>

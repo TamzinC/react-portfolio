@@ -13,7 +13,7 @@ function Header(props) {
       <div className={styles.logo}>
         <NavLink to="/" className={styles.logoLink}>
           <img
-            src="%PUBLIC_URL%/images/memoji-7.PNG"
+            src={`${process.env.PUBLIC_URL}/images/memoji-7.png`}
             alt="profile"
             className={styles.headerIcon}
           />
