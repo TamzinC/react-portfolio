@@ -73,10 +73,28 @@
 
 @media (max-width: 768px) {
   .contactForm {
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    height: auto;
+    top: 20%;
+    left: 18%;
+    width: 65%;
+    height: 60%;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactForm {
+    top: 20%;
+    left: 17.3%;
+    width: 65%;
+    height: 60%;
     gap: 0.75rem;
     padding: 0.75rem;
   }
@@ -86,5 +104,16 @@
   .contactForm button {
     font-size: 0.9rem;
     padding: 0.5rem;
+  }
+
+  .laptopWrapper {
+    max-width: 500px;
+  }
+
+  .contactBtn {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    line-height: 1px;
   }
 }
