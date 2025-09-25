@@ -1,31 +1,119 @@
 .header {
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
-.btn {
-  background-color: rgb(128, 108, 84);
-  color: #fff;
+.laptopWrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.laptopImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.contactForm {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  height: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  box-sizing: border-box;;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  color: white;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contactBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  transition: background 0.3s ease;
+  margin: auto;
+  line-height: 2px;
 }
 
 .success {
+  margin-top: 1rem;
+  color: lightgreen;
   text-align: center;
-  color: lightseagreen;
-  margin-top: 15px;
 }
 
-.wrapper {
-  background-color: #ebd7c1;
-  padding: 50px;
-  color: #462920;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  border-radius: 6px;
-  padding: 30px;
+@media (max-width: 768px) {
+  .contactForm {
+    top: 20%;
+    left: 18%;
+    width: 65%;
+    height: 60%;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactForm {
+    top: 20%;
+    left: 17.3%;
+    width: 65%;
+    height: 60%;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .laptopWrapper {
+    max-width: 500px;
+  }
+
+  .contactBtn {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    line-height: 1px;
+  }
 }

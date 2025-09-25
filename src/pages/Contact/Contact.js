@@ -55,8 +55,12 @@ function Contact(props) {
       <>
         <h1 className={styles.header}>Contact Me</h1>
 
-        <div className={styles.wrapper}>
-          <form onSubmit={handleSubmit}>
+        <div className={styles.laptopWrapper}>
+          <img
+          src= "/images/macbook-edit.png"
+          alt= "Macbook"
+          className={styles.laptopImage} />
+          <form onSubmit={handleSubmit} className={styles.contactForm}>
             <input 
               name='name' 
               value={formData.name} 
@@ -75,8 +79,8 @@ function Contact(props) {
               onChange={handleChange} 
               placeholder='Enter your message' 
               cols='30' 
-              rows='10'></textarea>
-            <button className={(styles.btn)}>Submit</button>
+              rows='15'></textarea>
+            <button className={(styles.contactBtn)}>Submit</button>
           </form>
         </div>
 

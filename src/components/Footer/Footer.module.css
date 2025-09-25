@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+
+  /* glassmorphic with fade overlay: */
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  color: #462920;
+}
+
+.footerVisible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.caption {
+  margin: 0;
+  font-size: 15px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 12px;
+}
+
+.footerTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.socialBadge {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.socialBadge:hover {
+  animation: rainbowColorShift 2.5s linear infinite;
+  transform: scale(1.1);
+}
+
+.iconLink:hover .socialBadge svg path {
+  fill: url(#rainbow-gradient);
+}
+
+
+@keyframes rainbowColorShift {
+  0%   { color: #ffb3ba; }  /* pastel red */
+  20%  { color: #ffdfba; }  /* pastel orange */
+  40%  { color: #ffffba; }  /* pastel yellow */
+  60%  { color: #baffc9; }  /* pastel green */
+  80%  { color: #bae1ff; }  /* pastel blue */
+  100% { color: #ffb3ba; }  /* back to pastel red */
+}

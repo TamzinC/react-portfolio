@@ -1,13 +1,12 @@
-.wrapper {
-  background-color: #ebd7c1;
-  padding: 50px;
-  color: #462920;
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 150px 0 150px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 20px;
   margin-top: 30px;
   border-radius: 6px;
-  padding: 30px;
 }
 
 .about {
@@ -16,23 +15,263 @@
   text-align: center;
 }
 
+.aboutImage {
+  display: block;
+  height: 220px;
+  margin-left: 40px;
+}
+
+.skillsWrapper {
+  padding: 150px;
+}
+
 .skills {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 25px;
+}
+
+.skillsItem {
+  /* padding: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  ); */
+  /* backdrop-filter: blur(12px); Glass blur */
+  /* -webkit-backdrop-filter: blur(12px); Safari support */
+  /* border: 0.2px solid rgba(255, 255, 255, 0.25); Soft border for depth */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); Subtle shadow */
+  /* padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative; */
+
+ padding: 20px;
+  background:
+    /* scattered glitter flecks */
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+    radial-gradient(circle at 20% 40%, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+    radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.5) 1.5px, transparent 1px),
+    radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    radial-gradient(circle at 85% 25%, rgba(255, 255, 255, 0.45) 1.5px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 2px, transparent 1px),
+    radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    radial-gradient(circle at 40% 15%, rgba(255, 255, 255, 0.4) 1.2px, transparent 1px),
+    radial-gradient(circle at 25% 60%, rgba(255, 255, 255, 0.55) 1.3px, transparent 1px),
+    radial-gradient(circle at 75% 80%, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    radial-gradient(circle at 90% 50%, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+    radial-gradient(circle at 15% 85%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1px),
+    radial-gradient(circle at 65% 15%, rgba(255, 255, 255, 0.35) 1.2px, transparent 1px),
+    radial-gradient(circle at 55% 85%, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    radial-gradient(circle at 45% 70%, rgba(255, 255, 255, 0.45) 1.3px, transparent 1px),
+    radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.4) 1.2px, transparent 1px),
+    radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+    radial-gradient(circle at 95% 20%, rgba(255, 255, 255, 0.35) 1.5px, transparent 1px),
+    radial-gradient(circle at 5% 50%, rgba(255, 255, 255, 0.4) 1.2px, transparent 1px),
+    radial-gradient(circle at 50% 95%, rgba(255, 255, 255, 0.5) 1.3px, transparent 1px),
+
+    /* glass gradient background */
+    linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 0.2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  animation: glitterTwinkle 6s linear infinite;
+}
+
+@keyframes glitterTwinkle {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 2px -2px;
+  }
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  gap: 6px;
+  list-style-type: none;
+  min-width: 0; /*allows shrinking inside a grid cell*/
+  overflow: hidden;
+  text-overflow: ellipsis; /* optional: adds "…" if text is too long */
+}
+
+.skillList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  color: #FFCBA4
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Permanent Marker", cursive;
 }
 
 .badges {
   height: 50px;
   margin: 15px;
-  color: #462920;
+  color: #FFCBA4;
 }
 
-h3 {
-  font-size: 25px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+.badges:hover {
+  animation: rainbowColorShift 2.5s linear infinite;
+  transform: scale(1.1);
+}
+
+.iconLink:hover .badges svg path {
+  fill: url(#rainbow-gradient);
+}
+
+
+@keyframes rainbowColorShift {
+  0%   { color: #ffb3ba; }  /* pastel red */
+  20%  { color: #ffdfba; }  /* pastel orange */
+  40%  { color: #ffffba; }  /* pastel yellow */
+  60%  { color: #baffc9; }  /* pastel green */
+  80%  { color: #bae1ff; }  /* pastel blue */
+  100% { color: #ffb3ba; }  /* back to pastel red */
 }
 
 aside {
   margin: 40px;
   text-align: center;
+}
+
+aside p {
+  margin-top: 60px;
+}
+
+
+@media (max-width: 2000px) {
+  .aboutContainer {
+    font-size: 18px;
+  }
+
+  .skillsItem{
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    padding: 40px 100px 0 100px;
+    font-size: 16px;
+  }
+
+  .skillsWrapper {
+    padding: 100px;
+  }
+
+  .skillsItem{
+    padding: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutContainer {
+    padding: 30px 50px 0 50px;
+    font-size: 15px;
+  }
+
+  .skillsWrapper {
+    padding: 70px;
+  }
+
+  .skillsItem{
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 40px 30px 0 30px;
+    font-size: 14px;
+  }
+
+  .skillsWrapper {
+    padding: 50px;
+  }
+
+  .skillsItem{
+    padding: 30px;
+  }
+
+  .skillList li {
+    gap: 10px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .badges {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutContainer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about {
+    font-size: 13px;
+  }
+
+  .aboutImage {
+    height: 180px;
+  }
+
+  .skillsWrapper {
+    padding: 40px;
+  }
+
+  .skills {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
 }

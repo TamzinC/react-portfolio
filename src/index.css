@@ -10,45 +10,50 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+
+  /* font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff; */
+
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+
+
+  /* background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+  /* background: linear-gradient(135deg, #ff4e50, #f9d423);
+  /* background: linear-gradient(135deg, #d16ba5 0%, #c777b9 20%, #ba83ca 40%, #f68084 60%, #f9d423 100%); */
+  background: linear-gradient(320deg, #f27121, #e94057, #8a2387);
+  background-size: 150% 150%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 /* CUSTOM */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3%;
-  height: 50px;
-  margin-top: 5px;
-}
-
-nav a {
-  color: #929BA0;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #462920;
-}
-
-nav a:not(:last-child) {
-  margin-right: 10px;
-}
-
-nav a.active {
-  color: #462920;
-}
 
 h1 {
-  color: #462920;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 40px;
+  /* color: #462920; */
   text-align: center;
   margin: 20px;
 }
 
+h2 {
+  color: #fff;
+}
+
 p {
-  color: #462920;
+  /* color: #462920; */
+  color: #fff;
 }
 
 a {
@@ -57,47 +62,106 @@ a {
 }
 
 button {
-  background-color: rgb(128, 108, 84);
+  /* background-color: rgb(128, 108, 84);
   color: #fff;
   height: 40px;
   border: none;
   border-radius: 5px;
   width: 100px;
-  margin: 7px;
+  margin: 7px; */
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #ff0080,
+    #ff8c00,
+    #40e0d0,
+    #8a2be2,
+    #ff0080
+  );
+  animation: rainbowGlow 6s linear infinite;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.4;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+button:hover::before {
+  opacity: 0.4;
 }
 
 button:hover {
-  opacity: 0.7;
-}
+  /* opacity: 0.7; */
 
-form {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-form > * {
-  padding: 7px 10px;
-  margin-bottom: 7px;
-  border: 1px solid #d8cec4;
-  outline: none;
+  /* background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
   color: #462920;
+  box-shadow:
+  0 0 8px #ff00ff,
+  0 0 16px #00ffff,
+  0 0 24px #ffff00,
+  0 0 32px #00ff00; */
+
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.3), 
+    0 4px 20px rgba(0, 0, 0, 0.1);    
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #fff;
-  text-align: center;
-}
+
+
 
 
 @media (max-width: 768px) {
   header {
-    font-size: 12px;
+    /* font-size: 16px; */
   }
   
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes rainbowGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
